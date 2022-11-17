@@ -13,7 +13,7 @@ export const Order = model(
       enum: ["WAITING", "IN_PRODUCTION", "DONE"],
       default: "WAITING",
     },
-    createdA: {
+    createdAt: {
       type: Date,
       default: Date.now,
     },
@@ -21,7 +21,7 @@ export const Order = model(
       required: true,
       type: [
         {
-          Product: {
+          product: {
             type: Schema.Types.ObjectId,
             required: true,
             ref: "Product",
