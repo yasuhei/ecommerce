@@ -5,3 +5,4 @@ export const Container = styled.div`
   max-width: 76rem;
   margin: 40px auto;
 `;
+export const Board = styled.div``;
